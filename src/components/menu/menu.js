@@ -35,7 +35,6 @@ const header = document.querySelector(".header")
 
    for (let i = 0 ; i<arr.length ; i++){
      const listItem = document.createElement("li")
-     
      listItem.textContent = arr[i]
      list.appendChild(listItem)
    }
@@ -46,7 +45,7 @@ const header = document.querySelector(".header")
 
   // Step 4: Add a click event listener to the menu button. When clicked it should toggle the class 'menu--open' on div.menu (your div with a 'menu' class).
   menuButton.addEventListener("click", () => {
-menu.classList.add("menu--open")
+  menu.classList.toggle("menu--open")
   })
 
   // Step 5: Don't forget to return your div.menu.
